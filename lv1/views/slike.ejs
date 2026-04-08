@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerija</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>Galerija slika</h1>
+<nav aria-label="Glavna navigacija">
+				<ul class="nav-menu">
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="grafikon.html">Grafikon</a></li>
+					<li><a href="slike.html">Galerija</a></li>
+				</ul>
+			</nav>
+<section class="galerija">
+
+<% images.forEach((image, index) => { %>
+
+    <figure class="galerija_slika">
+        <a href="#img<%= index %>">
+            <img src="<%= image.url %>" alt="<%= image.title %>">
+        </a>
+        <figcaption><%= image.title %></figcaption>
+    </figure>
+
+    <div id="img<%= index %>" class="lightbox">
+        <a href="#" class="close">X</a>
+        <img src="<%= image.url %>" alt="<%= image.title %>">
+    </div>
+
+<% }) %>
+
+</section>
+
+</body>
+</html>

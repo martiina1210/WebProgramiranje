@@ -1,0 +1,25 @@
+{
+  "name": "webprogramiranje",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martiina1210/WebProgramiranje.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martiina1210/WebProgramiranje/issues"
+  },
+  "homepage": "https://github.com/martiina1210/WebProgramiranje#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}
